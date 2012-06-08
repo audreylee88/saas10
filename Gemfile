@@ -26,5 +26,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug19', :require => 'ruby-debug'
+group :test do
+	gem 'ruby-debug19', :require => false #issues with Ruby 1.9.3p125+
+end
 gem 'haml'
